@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>只有河南后台登录</title>
+    <link rel="stylesheet" href="../../css/admin/login.css">
+    <script src="../../js/admin/login.js"> </script>
+</head>
+
+<body>
+    <img class="bg" src="../../images/zubt.png" style="background-repeat: no-repeat; background-attachment: fixed;">
+    <img class="logo" src="../../images/62e8fd62709b08107e6f0a65.png">
+    <!-- 最主要的框架 -->
+    <div class="main">
+        <form action="../../controllers/admin/login.php" method="post" id="login_form">
+            <!-- 左半部分 -->
+            <div class="left">
+                <p class="login">管理员登录</p>
+                <!-- 账号 -->
+
+                <div class="account">
+                    <p>账号/Account number</p>
+                    <input name="account" class="account_input" type="text" placeholder="     请输入账号">
+                </div>
+                <!-- 密码 -->
+                <div class="password">
+                    <p>密码/Passwrod number</p>
+                    <input name="password" class="password_input" type="password" placeholder="     请输入密码">
+                </div>
+
+
+                <!-- 登录 -->
+                <div class="submit" onclick="check_login()">
+                    <p>Login</p>
+                </div>
+            </div>
+            <!-- 右半部分 -->
+            <div class="rigth">
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

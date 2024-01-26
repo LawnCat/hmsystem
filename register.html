@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郑州工商学院学生登录系统</title>
+    <link rel="stylesheet" href="./css/register.css">
+    <script src="js/user/register.js"> </script>
+</head>
+
+<body>
+    <img class="bg" src="images/zubt.png" style="background-repeat: no-repeat; background-attachment: fixed;">
+    <img class="logo" src="images/62e8fd62709b08107e6f0a65.png">
+    <!-- 最主要的框架 -->
+    <div class="main">
+        <form action="controllers/user/register.php" method="post" id="register_form">
+            <!-- 左半部分 注册-->
+            <div class="left">
+                <p class="register">用户注册</p>
+                <div class="account">
+                    <p>账号/Account number</p>
+                    <input name="account" class="account_input" type="text" placeholder="     请输入账号">
+                </div>
+
+                <div class="password">
+                    <p>密码/Passwrod number</p>
+                    <input name="password" class="password_input" type="password" placeholder="     请输入密码(6-16位)">
+
+                </div>
+                <div class="password2">
+                    <p>确认密码/Passwrod number</p>
+                    <input name="password2" class="password_input" type="password" placeholder="     请再次输入密码">
+
+                </div>
+                <div class="name">
+                    <p>姓名/name</p>
+                    <input name="username" class="password_input" type="text" placeholder="     请输入姓名">
+                </div>
+                <div class="age">
+                    <p>年龄/age</p>
+                    <input name="userage" class="password_input" type="text" placeholder="     请输入年龄">
+                </div>
+                <div class="sex">
+                    <p>性别/sex</p>
+                    <input name="usersex" class="password_input" type="text" placeholder="     请输入年龄">
+                </div>
+
+                <div class="toregister" onclick="check_register()">
+                    <p>register</p>
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>
